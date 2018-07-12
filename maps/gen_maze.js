@@ -130,12 +130,13 @@ function caculation() {
         moves = [],
         moves.push({ y: 0, x: 0 }),
         query(a, 1)
-    console.log(moves)
 }
 
 init();
 
 caculation();
+
+
 
 return
 
