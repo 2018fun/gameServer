@@ -6,17 +6,22 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     res.send('respond with a armor');
 });
-
-router.post('/weaponList', function(req, res, next) {
-
-});
-
 /**
- * 单个武器信息
+ * 
  */
-router.post('/weaponInfo', function(req, res, next){
+router.get('/pet_list', function(){
 
 });
+/**
+ * 
+ */
+router.get('/pet_info', function() {
+
+});
+/**
+ * 驯化
+ */
+// router.post('/')
 
 
 module.exports = router;

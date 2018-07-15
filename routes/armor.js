@@ -1,4 +1,6 @@
-
+/**
+ * 装甲
+ */
 var express = require('express');
 var router = express.Router();
 
@@ -10,6 +12,8 @@ router.get('/', function(req, res, next) {
  * 
  */
 router.get('/armorInUse', function(req, res, next) {
+
+    var armor = getArmor(req.body.uuid)
     res.send('respond with a armor');
 });
 /**
@@ -23,6 +27,13 @@ router.post('/fixArmor', function(req, res, next) {
  */
 router.post('/exArmor', function(req, res, next) {
     res.send('respond with a armor');
+});
+/**
+ * 打造装甲
+ * need skill create
+ */
+router.post('/createArmor', function(){
+
 });
 /**
  * 

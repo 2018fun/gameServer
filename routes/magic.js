@@ -6,17 +6,14 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     res.send('respond with a armor');
 });
-
-router.post('/weaponList', function(req, res, next) {
-
-});
-
 /**
- * 单个武器信息
+ * 学习魔法
  */
-router.post('/weaponInfo', function(req, res, next){
-
+router.post('/learn', function(req, res, next){
+    var magic_id = req.body.magic_id
 });
-
+/**
+ * 
+ */
 
 module.exports = router;

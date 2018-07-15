@@ -7,16 +7,8 @@ router.get('/', function(req, res, next) {
     res.send('respond with a armor');
 });
 
-router.post('/weaponList', function(req, res, next) {
-
+router.post('/material', function(req, res, next){
+    var material_id = req.body.material_id
 });
-
-/**
- * 单个武器信息
- */
-router.post('/weaponInfo', function(req, res, next){
-
-});
-
 
 module.exports = router;

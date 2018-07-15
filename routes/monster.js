@@ -1,4 +1,3 @@
-
 var express = require('express');
 var router = express.Router();
 
@@ -6,17 +5,17 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     res.send('respond with a armor');
 });
-
-router.post('/weaponList', function(req, res, next) {
-
-});
-
 /**
- * 单个武器信息
+ * 获取单独怪物信息
  */
-router.post('/weaponInfo', function(req, res, next){
+router.post('/monster_info', function(req, res, next){
+    var material_id = req.body.material_id
+});
+/**
+ * 获取怪物列表
+ */
+router.post('/monster_list', function(req, res, next){
 
 });
-
 
 module.exports = router;

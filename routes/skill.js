@@ -10,4 +10,20 @@ router.get('/newSkill', function(req, res, next) {
     res.send('respond with a armor');
 });
 
+/**
+ * req:uuid, skillid
+ * res:level
+ */
+router.post('/playerSkillInfo', function(req, res, next){
+
+});
+
+/**
+ * skillid
+ */
+router.post('/skillInfo', function(req, res, next){
+    console.log(req.body.skill_id);
+    // res.send()
+});
+
 module.exports = router

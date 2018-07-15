@@ -1,4 +1,7 @@
 var lottery = {
+    random(min, max){
+        return Math.floor(Math.random() * (max - min)) + min;
+    },
     is_win: (choose, pool) => {
         return choose < Math.floor(Math.random() * pool)
     },
